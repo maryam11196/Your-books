@@ -4,4 +4,12 @@ import './css/style.css';
 import 'jquery/dist/jquery.min';
 import 'popper.js/dist/popper.min';
 import 'bootstrap/dist/js/bootstrap.min.js';
-console.log("hi bye");
+import '@fortawesome/fontawesome-free/js/all.min';
+
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});

@@ -20,7 +20,7 @@ module.exports = {
         contentBase: path.join(__dirname, "/dist"),
         port: 1234,
         writeToDisk: true,
-       // open: true,
+        // open: true,
     },
     module: {
         rules: [
@@ -61,6 +61,19 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: "fonts",
+                            esModule: false,
+                        }
+                    }
+                ]
+            },
 
         ]
     },
@@ -68,6 +81,26 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: './src/contact.html',
+
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: 'book1.html',
+            template: './src/book1.html',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'book2.html',
+            template: './src/book2.html',
+
+        }), new HtmlWebpackPlugin({
+            filename: 'checkout.html',
+            template: './src/checkout.html',
 
         }),
         new MiniCssExtractPlugin({
