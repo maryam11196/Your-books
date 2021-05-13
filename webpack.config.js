@@ -38,17 +38,19 @@ module.exports = {
 
             },
             {
-                test: /\.css$/,
-                use: [
+        
+                test: /\.(sa|sc|c)ss$/,
+                  use: [
                     {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            publicPath: '../'
-                        }
+                      loader: MiniCssExtractPlugin.loader,
+                      options: {
+                        publicPath:'../'
+                      }
                     },
-
-                    'css-loader'],
-            },
+                    "css-loader",
+                    'sass-loader',
+                  ],
+              },
             {
                 test: /\.(png|svg|jpe?g|gif)$/,
                 use: [

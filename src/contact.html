@@ -21,23 +21,28 @@
               data-target="#navbar-collapsed-menu">
               <i class="fas fa-bars"></i>
             </button>
-            <a href="#" class="navbar-toggler btn btn-icon">
+            <a href="./checkout.html" class="navbar-toggler btn btn-icon">
               <i class="fas fa-shopping-cart"></i>
             </a>
             <a class="navbar-brand pr-0" href=".">
               <img src="./images/logo_Book.png" width="50" alt="دار النشر" class="d-inline-block align-text-top">
-              كتابك
+              كتبك
             </a>
           </div>
-          <form class="form-inline mr-4">
-            <input class="form-control custom-form-control" type="search" placeholder="كلمة البحث ..">
 
-            <button class="btn search-btn" type="submit">ابحث</button>
-          </form>
           <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="./index.html">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">خدماتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">اسعارنا</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -58,7 +63,7 @@
                 <a class="nav-link" href="./contact.html">تواصل معنا</a>
               </li>
               <li class="d-none d-lg-block">
-                <a href="checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="عربة الشراء"
+                <a href="./checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="عربة الشراء"
                   data-toggle="tooltip" data-placement="bottom">
                   <i class="fas fa-shopping-cart"></i>
                 </a>
@@ -83,6 +88,7 @@
 
     </div>
   </section>
+ 
   <!-- End Breadcrumbs -->
 
   <!-- ======= Contact Section ======= -->
@@ -136,12 +142,16 @@
                   required>
               </div>
             </div>
-
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="الرسالة" required></textarea>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="الموضوع" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="4" placeholder="الرسالة" required></textarea>
             </div>
 
-            <div class="text-center"><button class="btn custom-btn-primary" type="submit">ارسال</button></div>
+            <div class="text-center">
+              <button class="btn custom-btn-primary" type="submit">ارسال</button>
+            </div>
           </form>
         </div>
 
@@ -168,8 +178,7 @@
           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
           <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-              class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
           <!-- Linkedin -->
           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
@@ -222,7 +231,7 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         جميع الحقوق محفوظة 2021©
-        <a class="text-dark" href=".">كتابك</a>
+        <a class="text-dark" href=".">كتبك</a>
       </div>
       <!-- Copyright -->
     </div>
