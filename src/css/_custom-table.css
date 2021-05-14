@@ -1,0 +1,26 @@
+.custom-table th, .custom-table td {
+  padding: 15px;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  font-size: 120%;
+  margin: auto;
+}
+.custom-table th:first-child, .custom-table td:first-child {
+  width: 50%;
+}
+.custom-table th:not(:first-child), .custom-table td:not(:first-child) {
+  text-align: center;
+}
+.custom-table th {
+  color: #2c2929;
+  font-weight: normal;
+}
+.custom-table th:first-child {
+  padding-right: 20px;
+}
+.custom-table tfoot td {
+  border-bottom: none;
+  font-size: 150%;
+}
+
+/*# sourceMappingURL=_custom-table.css.map */

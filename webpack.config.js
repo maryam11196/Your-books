@@ -20,7 +20,7 @@ module.exports = {
         contentBase: path.join(__dirname, "/dist"),
         port: 1234,
         writeToDisk: true,
-        // open: true,
+         open: true,
     },
     module: {
         rules: [
@@ -76,6 +76,13 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: require.resolve('jquery'),
+                loader: 'expose-loader',
+                options: {
+                  exposes: ['$', 'jQuery'],
+                }
+              },
 
         ]
     },
