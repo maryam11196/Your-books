@@ -1,5 +1,8 @@
 $brand-color: #0069d9;
 $brand-color-dark:darken($brand-color,25%);
-$bg-color-book:#80401a;
+$bg-color-book1:#80401a;
+$bg-color-book1D:lighten($bg-color-book1,10%);
+$bg-color-book2:#2DA3E2;
+$bg-color-book2D:lighten($bg-color-book2,10%);
 $btn-cart:#39b3d7;
 $btn-cart-dark:darken($btn-cart,25%);

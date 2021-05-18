@@ -92,12 +92,7 @@ module.exports = {
             template: './src/index.html',
 
         }),
-        new HtmlWebpackPlugin({
-            filename: 'contact.html',
-            template: './src/contact.html',
-
-        }),
-
+       
         new HtmlWebpackPlugin({
             filename: 'book1.html',
             template: './src/book1.html',

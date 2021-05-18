@@ -144,26 +144,8 @@ footer .overlay a.btn:hover {
   background-color: #A0BBD6;
 }
 
-.carousel-item {
-  width: 100%;
-  margin-top: 100px;
-}
 
-.carousel-item .card img.card-img-top {
-  width: 100%;
-  height: 350px;
-}
 
-.carousel-indicators li {
-  margin-bottom: 10px;
-}
-
-.carousel-indicators li {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 10px;
-  background-color: red;
-}
 
 section.breadcrumbs {
   padding: 20px 0 20px 0;
@@ -525,64 +507,51 @@ section.counterbox .counter-box p {
 
 /*product*/
 
-.wp-block {
-  margin: 0 0 15px 0;
-  padding: 15px;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-  position: relative;
-  cursor: default;
-  border-radius: 2px;
-}
 
-.wp-block.product {
+.custom-thumbnail{
   background: #fff;
-  padding: 15px;
+  padding: 8px;
   margin-bottom: 20px;
   border: 1px solid #e0eded;
 }
+.custom-thumbnail .card-body{
+  padding: 9px;
+}
+.custom-thumbnail:hover{
 
-.wp-block:before, .wp-block:after {
-  display: table;
-  content: "";
+border-color: #0069D9;
+}
+.custom-thumbnail img{
+height:240px;
+width: 100%;
+max-width:250px;
+margin:0 auto;
+display: block;
 }
 
-.wp-block.product figure {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #e0eded;
-}
 
-.img-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 500px;
-}
-
-.wp-block.product .product-title {
+.product .product-title {
   margin: 10px 0 0 0;
   padding: 0;
   border-bottom: 0;
 }
 
-section.product h2 {
-  font-size: 25px;
+.custom-thumbnail h4 {
+  font-size: 25px ;
+  padding-bottom: 15px;
+
 }
 
-.wp-block.product .product-title a {
-  font-size: 16px;
+.product .product-title a {
+  font-size: 20px;
   font-weight: 600;
   color: #3498db;
+  padding: 5px;
 }
 
-.wp-block.product .wp-block-footer {
-  border-top: 1px solid #e0eded;
-  padding-top: 15px;
-  padding-bottom: 5px;
-}
 
-.wp-block.product .price {
+
+.product .price {
   padding: 4px 0;
   font-size: 13px;
   font-weight: 600;
@@ -621,13 +590,14 @@ div.book-info {
   margin: 15px;
 }
 
-@media (max-width: 780px) {
-  section.product h2 {
-    font-size: 15px;
+@media (max-width: 991px) and (min-width:768px){
+ 
+  .custom-thumbnail img{
+    height:200px;
   }
-  .img-center {
-    height: 250px;
+  .btn-icon.btn-sm span, .btn-icon.btn-sm input {
+    padding-left: 0px;
   }
+  
 }
 
-@media (max-width:575px) {}
